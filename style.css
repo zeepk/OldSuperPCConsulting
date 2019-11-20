@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  background: url("./images/pattern2.png");
+  /* http://patternico.com/#OkaSErbCQFihJVKN */
+}
+head {
+  text-align: center;
+  color: black;
+}
+img {
+  max-width: 40em;
+}
+.HeadGrid {
+  display: grid;
+  grid-template-columns: 33vw 33vw 33vw;
+  grid-template-rows: 90px 90px;
+  grid-gap: 10px;
+}
+
+.HeadBox {
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.ServicesGrid {
+  display: grid;
+  grid-template-columns: 10vw 20vw 20vw 20vw 20vw 10vw;
+  grid-template-rows: 120px 90px;
+  grid-gap: 10px;
+}
+
+.ServicesBox {
+  border: black 1px solid;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+}
