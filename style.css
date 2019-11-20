@@ -1,12 +1,19 @@
 * {
   margin: 0;
   padding: 0;
-  background: url("./images/pattern2.png");
+  background-color: white;
+  /* background: url("./images/pattern2.png"); */
   /* http://patternico.com/#OkaSErbCQFihJVKN */
+  color: #5382a6;
+}
+a {
+  border: 2px solid transparent; /* <- here */
+  transition: border 1s;
+  text-decoration: none;
+  border-radius: 8px;
 }
 head {
   text-align: center;
-  color: black;
 }
 img {
   max-width: 40em;
@@ -26,18 +33,36 @@ img {
   font-family: "Open Sans", sans-serif;
 }
 
-.ServicesGrid {
+.NavGrid {
   display: grid;
   grid-template-columns: 10vw 20vw 20vw 20vw 20vw 10vw;
-  grid-template-rows: 120px 90px;
+  /* grid-template-rows: 500px; */
   grid-gap: 10px;
 }
+.NavGrid a:hover {
+  border: 2px solid #edbd8f;
+}
 
-.ServicesBox {
-  border: black 1px solid;
+.NavBox {
   border-radius: 5px;
-  padding: 20px;
+
   text-align: center;
   font-size: 30px;
   font-family: "Open Sans", sans-serif;
+  color: black;
+}
+.ServicesGrid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  /* grid-template-rows: 500px; */
+  grid-gap: 10px;
+}
+.ServicesBox {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+  color: #9a632e;
+}
+.ServicesBox li {
+  padding: 10px;
 }
